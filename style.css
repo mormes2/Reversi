@@ -1,0 +1,231 @@
+
+body {
+
+    background-size: 100%;
+    background-image: url("backgruond.jpg");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: auto;
+    text-align: center;
+
+}
+@media only screen and (max-width: 600px) {
+
+}
+    
+
+
+p {
+    align-items: center;
+    text-align: center;
+    color: lightblue;
+    margin: 3px auto auto;
+}
+
+#h1 {
+    height: 170px;
+    width: 230px;
+    padding: 0;
+    display: block;
+    margin: -50px auto auto;
+
+}
+.endgameBody {
+    opacity: 0.5;
+}
+
+.cell {
+    height: 30px;
+    width: 30px;
+    background-image: url("cell.png");
+    border: black solid 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 6px;
+}
+
+.validCell {
+    background-size: 100%;
+    background-image: url("cell2.png");
+    opacity: 0.7;
+}
+
+.inValidCell {
+    opacity: 1;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+    padding: 5px;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    grid-row-gap: 2px;
+    grid-column-gap: 5px;
+
+
+}
+
+.display-board {
+
+    position: static;
+    display: flex;
+    z-index: 0;
+}
+
+.disc {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 60%;
+    display: inline-block;
+
+}
+
+.black:hover {
+    opacity:1;
+}
+
+.white {
+    background-image: linear-gradient(white, lightblue);
+}
+
+.black {
+    background-image: linear-gradient(darkslategrey, black);
+}
+
+
+/* Modal Content */
+.modal-content {
+    border-color: aliceblue;
+    border-width: medium;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+    z-index: 5;
+    visibility: visible;
+    opacity:1;
+    background-color:antiquewhite;
+    margin: -423px -550px auto auto;
+}
+
+.stats {
+    background-color: mistyrose;
+}
+
+.win {
+    color:crimson;
+    font-family: Impact;
+    font-size: 30px;
+    text-align: center;
+    margin:auto;
+}
+
+.playerScore {
+    font-size: 20px;
+    font-family: Impact;
+}
+
+.hidden {
+    visibility: hidden;
+    z-index: 3;
+    width: 450px;
+    height:150px;
+}
+
+.vis {
+    visibility: visible;
+}
+
+
+#endGameButton {
+
+    font-family: Impact;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: crimson;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-left: 15px;
+    margin-right: 10px;
+
+}
+
+#endGameButton:hover {background-color:crimson}
+
+#endGameButton:active {
+    background-color:crimson;
+    box-shadow: 0 5px #999999;
+    transform: translateY(4px);
+}
+
+#endGameButton:hover {
+    opacity: 0.8;
+}
+
+.statistics
+{
+    font-size: 20px;
+    font-family: Impact;
+    display: inline-block;
+    margin-left:  50px;
+    margin-right: 50px;
+}
+
+.players {
+    padding:10px;
+    width:200px;
+    height:100px;
+}
+
+.box {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-top:-30px;
+    border-style: dashed hidden dashed hidden;
+    height:135px;
+
+}
+
+#restartButton{
+    font-family: Impact;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:crimson;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#restartButton:hover {background-color: crimson}
+
+#restartButton:active {
+    background-color: crimson;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#restartButton:hover {
+    opacity: 0.8;
+}
+

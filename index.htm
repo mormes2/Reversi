@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="reversi.js" defer></script>
+
+</head>
+<body>
+
+<img id="h1" src="logo.png" alt="logo">
+
+<div class="box">
+    <div id="BlackPlayer" class="statistics players" >
+        <h1 class="win">Black</h1>
+        <p id = "p1"><span class="disc black"></span><span id="p1score" class = "playerScore"> X 2</span></p>
+        <p id="numberofMovesb"></p>
+        <p id="Scoreb"></p>
+        <p id="avgTimeBlack">Average Time: 0 sec</p>
+        <p id="twoDiscsB">Total of 2 discs: 1</p>
+    </div>
+
+    <div id="stats" class ="statistics ">
+        <p>Current player   <span id="currentPlayer" class="disc black"></span>  </p>
+        <p> Training mode  <input type="checkbox" id="myCheck" ></p>
+        <p id="clock"><time>00:00:00</time></p>
+        <p id="NumberOfMoves">Moves: 0</p>
+    </div>
+    <div id="whitePlayer" class="statistics players">
+        <h1 class="win">White</h1>
+        <p id = "p2"><span class="disc white"></span> <span id="p2score" class = "playerScore"> X 2</span></p>
+        <p id="numberofMovesw"></p>
+        <p id="Scorew"></p>
+        <p id="avgTimeWhite">Average Time: 0 sec</p>
+        <p id="twoDiscsW">Total of 2 discs: 1</p>
+    </div>
+</div>
+<div id="wining" class="hidden">
+    <h1 id = "winner" class="win"></h1>
+
+</div>
+<div id="buttons" ></div>
+
+
+</body>
+</html>
